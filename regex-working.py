@@ -11,15 +11,26 @@
 
 # if __name__ == "__main__": main()
 
+# import re
+
+# def main():
+# 	fh = open("comment.py")
+# 	for line in fh:
+# 		# print(re.sub('(def|a)n','###', line), end='')
+# 		match = re.search('(def|a)n', line)
+# 		if match:
+# 			print(line.replace(match.group(), "amin"), end='')
+
+		
+# if __name__ == "__main__": main()
+
 import re
 
 def main():
-	fh = open("comment.py")
+	fh = open('comment.py')
+	pattern = re.compile('(def|a)n')
 	for line in fh:
-		# print(re.sub('(def|a)n','###', line), end='')
-		match = re.search('(def|a)n', line)
-		if match:
-			print(line.replace(match.group(), "amin"), end='')
+		if re.search(pattern,line):
+			print(line, end='')
 
-		
 if __name__ == "__main__": main()
