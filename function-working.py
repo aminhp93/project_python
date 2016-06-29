@@ -17,11 +17,20 @@
 
 # if __name__ == "__main__": main()
 
-def main():
-	testfunc(one = 1, two = 2, four = 42)
+# def main():
+# 	testfunc(one = 1, two = 2, four = 42)
 
-def testfunc(**kwargs):
-	print("This is a test function", kwargs['one'], kwargs['two'], kwargs['four'])
-	for k in kwargs: print(k, kwargs[k])
+# def testfunc(**kwargs):
+# 	print("This is a test function", kwargs['one'], kwargs['two'], kwargs['four'])
+# 	for k in kwargs: print(k, kwargs[k])
+
+# if __name__ == "__main__": main()
+
+def main():
+	# print(testfunc())
+	for n in testfunc(): print(n, end=' ')
+
+def testfunc():
+	return range(25)
 
 if __name__ == "__main__": main()
