@@ -57,31 +57,57 @@
 # if __name__ == "__main__": main()
 
 
-class Animal:
-	def talk(self): print('I have something to say')
-	def walk(self): print('Hey I am walking here')
-	def clothes(self): print('I have nice blothes')
+# class Animal:
+# 	def talk(self): print('I have something to say')
+# 	def walk(self): print('Hey I am walking here')
+# 	def clothes(self): print('I have nice blothes')
 
-class Duck(Animal):
+# class Duck(Animal):
+# 	def walk(self):
+# 		super().walk()
+# 		print('qfsadf')
+
+# class Dog(Animal):
+# 	def clothes(self):
+# 		super().clothes()
+# 		print('I have brown and white fur')
+
+# def main():
+# 	donald = Duck()
+# 	donald.walk()
+
+# 	alo = Dog()
+# 	alo.clothes()
+
+# if __name__ == "__main__": main()
+
+
+class Duck:
+	def quack(self):
+		print('QUacl')
+
 	def walk(self):
-		super().walk()
-		print('qfsadf')
+		print("whawlk in taf tre")
 
-class Dog(Animal):
-	def clothes(self):
-		super().clothes()
-		print('I have brown and white fur')
+class Dog:
+	def bark(self):
+		print('woff')
+
+	def fur(self):
+		print('The dog has brown and white fur')
 
 def main():
-	donald = Duck()
-	donald.walk()
-
-	alo = Dog()
-	alo.clothes()
+	a = Duck()
+	
+	b = Dog()
+	
+	for o in (a, b):
+		o.quack()
+		o.walk()
+		o.bark()
+		o.fur()
 
 if __name__ == "__main__": main()
-
-
 
 
 
